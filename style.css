@@ -1,0 +1,758 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+    color: #444444;
+}
+
+/* Nav Bar*/
+li, a {
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 5px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #F2F2F2;
+}
+
+.logo{
+    width: 210px;
+    padding-left: 20px;
+}
+
+.guitarBurger, #toggle{
+    display: none;
+}
+
+.navLink{
+    padding-right: 50px;
+}
+
+.navLink li{
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.navLink li a{
+    padding: 5px;
+    opacity: 0.80;
+
+}
+
+.navLink li a:hover{
+    color: #B14949;
+}
+
+.redButton{
+    border: 2px solid #B14949;
+    border-radius: 10px;
+    color: #B14949;
+
+}
+
+
+
+.redButton svg{
+    width: 19px;
+    margin-right: 9px;
+    fill: #B14949;
+}
+
+
+/*image et texte de présentation*/
+
+.imagePresentation{
+    border-top: 10px solid #B14949;
+}
+
+.imageBackGround{
+    position: relative;
+    background-image: url("images/bakground.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 66vw;
+    
+}
+.textPresentContain{
+    display: inline-block;
+    position: relative;
+    top: 66%;
+    left: 37%;
+}
+
+.textPresentContain h2 {
+    color: #F2F2F2;
+    font-size: 2.5vw;
+    font-family:'Roboto', sans-serif;
+    letter-spacing: 0.6vw;
+    line-height: 4.6vw;
+}
+
+.texteStylePresentation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.texteStylePresentation::before{
+    display: flex;
+    content: " ";
+    background-color: #F2F2F2;
+    margin-right: 10px;
+    width: 20.3vw;
+    height: 6px;
+}
+
+/* L'esprit Guitare */
+
+.containTitle_EspritGuitar{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color:#B14949;
+}
+
+.espritTitle{
+    color: #F2F2F2;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-left: 51px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.containerEsprit{
+    display: flex;
+    padding : 50px;
+}
+
+.texteEsprit{
+    width: 50%;
+    padding-right: 30px;
+}
+.imageEsprit{
+    width: 50%;
+    padding-left: 30px;
+    padding-top: 12px;
+}
+
+/* Texte esprit RGuitar*/
+.texteEsprit div h4{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.texteEsprit div p{
+    font-size: 20px;
+    padding: 30px 0px 35px 0px;
+    text-align: justify;
+    line-height: 40px;
+    word-spacing: 10px;
+}
+
+.itemTitle1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemTitle1::after{
+    display: flex;
+    content: " ";
+    background-color: #B14949;
+    margin-left: 10px;
+    width: 49%;
+    height: 6px;
+}
+.itemTitle2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemTitle2::before{
+    display: flex;
+    content: " ";
+    background-color: #B14949;
+    margin-right: 10px;
+    width: 55%;
+    height: 6px;
+}
+.itemTitle3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemTitle3::after{
+    display: flex;
+    content: " ";
+    background-color: #B14949;
+    margin-left: 10px;
+    width: 59%;
+    height: 6px;
+}
+
+/* Image esprit R guitar coté droit*/
+.imageItemFlex{
+    display: flex;
+}
+.image1Flex{
+    width: 60%;
+    height: auto;
+    padding-right: 10px;
+}
+.image2Flex{
+    width: 40%;
+    height: auto;
+}
+.image2Esprit{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* Nos Grates */
+.containTitle_NosGrattes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    background-color:#B14949;
+}
+
+.nosGrattesTitle{
+    color: #F2F2F2;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-left: 51px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.stockGuitare{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stockTitle{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stockTitle::after{
+    display: flex;
+    content: " ";
+    background-color: #B14949;
+    margin-left: 10px;
+    width: 140px;
+    height: 6px;
+}
+
+.stockTexte{
+    font-size: 20px;
+    padding: 20px 0px 50px 0px;
+    text-align: justify;
+    margin-left: 30%;
+    margin-right: 30%;
+    word-spacing: 10px;
+    line-height: 40px;
+    
+}
+.venteGuitare{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.itemGuitare{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+.itemGuitare img{
+    padding-bottom: 30px;
+}
+
+.itemGuitare p{
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.lesPaul{
+    width: 83%;
+}
+
+.fenderStratocaster{
+    width: 101%;
+}
+
+.prixGuitare{
+    display: flex;
+    justify-content: space-around;    
+}
+
+.prixGuitare p{
+    font-size: 16px;
+}
+
+.prixBarre{
+    text-decoration:line-through
+
+}
+.itemGuitare button{
+    width: 100px;
+    padding: 5px;
+    background-color: #B14949;
+    color: #F2F2F2;
+    border: 2px solid #B14949;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.itemGuitare button:hover{
+    background-color: #F2F2F2;
+    color: #B14949;
+    border: 2px solid #B14949;
+    border-radius: 5px;
+    cursor :pointer;
+}
+
+.itemGuitare button:active{
+    cursor : progress;
+}
+
+/* FORMULAIRE */
+
+.containTitle_Contact{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color:#B14949;
+    margin-top: 100px;
+}
+
+.titleForm{
+    color: #F2F2F2;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-left: 51px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.containForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containForm p {
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.containForm p::before{
+    display: flex;
+    content: " ";
+    background-color: #B14949;
+    margin-left: 10px;
+    width: 140px;
+    height: 6px;
+    margin-right: 10px;
+}
+
+.nomPrenom{
+    padding-bottom: 50px;
+}
+
+.contactElement{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+
+input{
+    width: 300px;
+    height: 40px;
+    border: 2px solid #B14949;
+    margin-top :20px;
+    margin-right : 20px;
+    padding-left: 3px;
+    border-radius: 3px;
+}
+
+input:focus,
+textarea:focus{
+    background-color: rgba(180, 92, 92, 0.1);
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.phoneNumber{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+label{
+    font-size: 15px;
+    color: #444444;
+    text-transform: uppercase;
+
+}
+
+.textAreaContact textarea{
+    width: 97%;
+    height: 20vw;
+    border: 2px solid #B14949;
+    padding-left: 3px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.buttonValid button{
+    background-color: #B14949;
+    width: 150px;
+    height: 30px;
+    color: #F2F2F2;
+    border : none;
+    border-radius: 5px;
+    margin-left: 38.28%;
+    margin-bottom: 50px;
+}
+
+
+/* RESPONSIVE SCREEN*/
+
+@media screen and (max-width : 1025px) {
+    .texteEsprit{
+        padding-right: 0px;
+    }
+    .texteEsprit div p {
+        font-size: 17px;
+        line-height: 28px;
+        word-spacing: 1px;
+        padding: 15px 0px 15px 0px;
+    } 
+    .texteEsprit div h4{
+        font-size: 20px;
+    }  
+    .itemTitle1::after {
+        width: 187px;
+    } 
+    .itemTitle2::before{
+        width: 219px;
+    }
+    .itemTitle3::after{
+        width: 241px;
+    }
+    .stockTexte {
+        font-size: 20px;
+        padding: 10px 0px 20px 0px;
+        margin-left: 15%;
+        margin-right: 15%;
+        line-height: 30px;
+    }
+    .stockTitle {
+        font-size: 20px;
+    }
+    .gibsonCasino {
+        width: 221px;
+    }
+    .bcRich{
+        width: 232px;
+    }
+    .itemGuitare p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width : 930px){
+    .navLink li a{
+        font-size: 15px;
+    }
+    .texteEsprit div p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .texteEsprit div h4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 834px){
+    .espritTitle, .nosGrattesTitle, .titleForm {
+        font-size: 20px;
+    }
+    .navLink {
+        padding-right: 10px;
+    }
+    .navLink li {
+        padding-left: 15px;
+    }
+    .navLink li a{
+        font-size: 15px;
+    }
+    .itemTitle1::after {
+        width: 125px;
+    }
+    .itemTitle2::before {
+        width: 149px;
+    }
+    .itemTitle3::after {
+        width: 165px;
+    }
+    .texteEsprit div p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .stockTitle {
+        font-size: 15px;
+    }
+    .stockTexte {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .itemGuitare p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    .navLink li a{
+        font-size: 10px;
+        padding: 3px;
+        font-weight: none;
+        border-radius: 4px;
+    }
+    .navLink li {
+        padding-left: 5px;
+
+    }
+    .fa-shopping-cart:before{
+        font-size:15px
+    }
+    .texteEsprit div p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .texteEsprit div h4 {
+        font-size: 13px;
+    }
+    .itemTitle1::after {
+        width: 63px;
+        height: 4px;
+    }
+    .gibsonCasino {
+        width: 164px;
+    }
+    .bcRich {
+        width: 174px;
+    }
+    
+}
+@media screen and (max-width : 640px) {
+    .logo {
+        width: 200px;
+        padding-left: 16px;
+        float: left;
+    }
+    .itemTitle1::after {
+        width: 87px;
+        height: 4px;
+    }
+    .itemTitle2::before {
+        width: 108px;
+        height: 4px;
+    }
+    .itemTitle3::after {
+        width: 118px;
+        height: 4px;
+    }
+    .gibsonCasino {
+        width: 139px;
+    }
+    .bcRich {
+        width: 143px;
+    }
+
+    .nomPrenom {
+        padding-bottom: 20px;
+    }
+
+    .contactElement {
+        display: inline-block;/
+        padding-bottom: 15px;
+    }
+    .containForm p {
+        font-size: 22px;
+    }
+    .phoneNumber{
+        margin-top :25px;
+    }
+  
+    nav .menuBurger_nav {
+        display: none;
+        flex-direction: column;
+        background: #B14949;
+        height: 400px;
+
+    }
+ 
+    nav .menuBurger_nav ul li a {
+        width: 50%;
+        color: #444444,
+    }
+ 
+    .guitarBurger 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: #444444;
+        cursor: pointer;
+        margin-right: 15px;
+        z-index: 100;
+    }
+ 
+    #toggle:checked + .menuBurger_nav {
+        display: flex;
+
+    }
+    
+
+}
+
+@media screen and (max-width : 426px) {
+    
+    .venteGuitare {
+        display: flex;
+        flex-direction: column;
+    }
+    .itemGuitare{
+        width: 100%;
+    }
+    .gibsonCasino {
+        width: 270px;
+    }
+    .itemGuitare p {
+        font-size: 19px;
+    }
+    .lesPaul {
+        width: 250px;
+        margin-top: 20px;
+    }
+    .fenderStratocaster {
+        width: 300px;
+        margin-top: 20px;
+    }
+    .bcRich {
+        width: 302px;
+        margin-top: 20px;
+    }
+    .nosGrattesTitle{
+        padding-right: 19%;
+    }
+    .titleForm{
+        padding-left: 17%;
+    }
+    textarea{
+        width: 50%;
+    }
+    .buttonValid button{
+        margin-left: 26.28%;
+    }
+    .containerEsprit {
+        display: inline-block;
+        padding: 20px;
+    }
+    .texteEsprit {
+        width: 100%;
+    }
+    .imageEsprit{
+        display: none;
+    }
+
+    .itemTitle1::after {
+        width: 203px;
+    }
+    .itemTitle2::before {
+        width: 224px;
+    }
+    .itemTitle3::after {
+        width: 238px;
+    }
+
+}
+
+@media screen and (max-width : 376px) {
+
+    .espritTitle{
+        font-size: 14px;
+    }
+    .imageEsprit{
+        display: none;
+    }
+    .containerEsprit{
+        display: block;
+    }
+    .texteEsprit {
+        width: 100%;
+    }
+    .itemTitle1::after {
+        width: 136px;
+    }
+    .itemTitle2::before {
+        width: 160px
+    }
+    .itemTitle3::after {
+        width: 172px;
+    }
+    .containTitle_EspritGuitar {
+        height: 40px;
+    }
+
+    .nosGrattesTitle, .titleForm {
+        font-size: 16px;
+    }
+
+    .containTitle_NosGrattes {
+        height: 40px;
+    }
+
+    .containerEsprit {
+        padding: 15px;
+    }
+
+}
